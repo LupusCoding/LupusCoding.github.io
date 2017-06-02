@@ -1,0 +1,51 @@
+{
+	"repos": [
+		{
+			"name": "JavaScripts",
+			"url":  "https://github.com/LupusCoding/javascripts",
+			"description": "Classes, Functions and jQuery Replacements"
+		},
+		{
+			"name": "PHP",
+			"url":  "",
+			"description": "coming soon..."
+		},
+		{
+			"name": "Phaser",
+			"url":  "",
+			"description": "Minigames, Plugins and Engines"
+		},
+		{
+			"name": "Bash Tools",
+			"url":  "",
+			"description": "Simple command line tools"
+		},
+		{
+			"name": "",
+			"url":  "",
+			"description": ""
+		}
+	],
+	"docs": [
+		{
+			"name": "Git and Git Flow (Basics)",
+			"url":  "/docs/git_and_git_flow.pdf",
+			"description": "PDF de_DE"
+		},
+		{
+			"name": "Naming Conventions (Basics)",
+			"url":  "/docs/naming_conventions.pdf",
+			"description": "PDF de_DE"
+		},
+		{
+			"name": "Projekt Konzeptionierung",
+			"url":  "/docs/projekt_konzeptionierung.pdf",
+			"description": "PDF de_DE"
+		},
+		{
+			"name": "",
+			"url":  "",
+			"description": ""
+		}
+	]
+}

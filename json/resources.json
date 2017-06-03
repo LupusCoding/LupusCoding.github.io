@@ -6,19 +6,19 @@
 			"description": "Classes, Functions and jQuery Replacements"
 		},
 		{
-			"name": "PHP",
-			"url":  "",
-			"description": "coming soon..."
-		},
-		{
 			"name": "Phaser",
-			"url":  "",
+			"url":  "https://github.com/LupusCoding/phaser",
 			"description": "Minigames, Plugins and Engines"
 		},
 		{
 			"name": "Bash Tools",
-			"url":  "",
+			"url":  "https://github.com/LupusCoding/tools",
 			"description": "Simple command line tools"
+		},
+		{
+			"name": "PHP",
+			"url":  "",
+			"description": "coming soon..."
 		},
 		{
 			"name": "",

@@ -1,12 +1,13 @@
+
 function getLists() {
     setTimeout(function() {
         if(documents != null && repositories != null) {
-            fillRepoList();
-            fillDocList();
+            fillRepoPrev(4);
+            fillDocPrev(4);
         } else {
             getLists();
         }
-    },1000);
+    },500);
 }
 
 // we take the resources first, so we can use them at DOMContentLoaded state

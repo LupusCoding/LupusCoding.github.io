@@ -83,12 +83,14 @@ function fillRepoList() {
     var repoList = document.getElementById('repo_list');
     repoList.children[0].remove();
     for(var r=0; r<repositories.length-1; r++) {
-        var li = document.createElement('li');
-        var a = document.createElement('a');
-        a.href = repositories[r].url;
-        a.innerHTML = repositories[r].name + '<br/><em><small>' + repositories[r].description + '</small></em>';
-        li.append(a);
-        repoList.append(li);
+        if(repositories[r].url != '') {
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = repositories[r].url;
+            a.innerHTML = repositories[r].name + '<br/><em><small>' + repositories[r].description + '</small></em>';
+            li.append(a);
+            repoList.append(li);
+        }
     }
 }
 
@@ -102,12 +104,12 @@ function fillRepoList() {
 function fillDocPrev(steps) {
     var docList = document.getElementById('doc_list');
     docList.children[0].remove();
-    listend = repositories.length-1;
+    listend = documents.length-1;
     for(var d=listend; d>listend-steps; d--) {
         if(d < 0) {
             break;
         }
-        if(repositories[d].url == '') {
+        if(documents[d].url == '') {
             steps++;
         } else {
             var li = document.createElement('li');
@@ -131,14 +133,16 @@ function fillDocList() {
     var docList = document.getElementById('doc_list');
     docList.children[0].remove();
     for(var d=0; d<documents.length-1; d++) {
-        var li = document.createElement('li');
-        li.classList.add('doclist-item');
-        var a = document.createElement('a');
-        a.href = documents[d].url;
-        a.target = '_blank';
-        a.innerHTML = documents[d].name + '<br/><em><small>' + documents[d].description + '</small></em>';
-        li.append(a);
-        docList.append(li);
+        if(documents[d].url != '') {
+            var li = document.createElement('li');
+            li.classList.add('doclist-item');
+            var a = document.createElement('a');
+            a.href = documents[d].url;
+            a.target = '_blank';
+            a.innerHTML = documents[d].name + '<br/><em><small>' + documents[d].description + '</small></em>';
+            li.append(a);
+            docList.append(li);
+        }
     }
 }
 

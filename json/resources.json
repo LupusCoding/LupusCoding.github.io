@@ -47,5 +47,19 @@
 			"url":  "",
 			"description": ""
 		}
+	],
+	"images": [
+		{
+			"name":   "CodeTalks E-Commerce 2017",
+			"folder": "2017_codetalks",
+			"suffix": "jpg",
+			"last":   10
+		},
+		{
+			"name":   "",
+			"folder": "",
+			"suffix": "",
+			"last":   0
+		}
 	]
 }

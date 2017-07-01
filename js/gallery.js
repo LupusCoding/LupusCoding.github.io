@@ -12,7 +12,7 @@ function getLists() {
     			);
     			galleryFullWidth += galleryList[i].offsetWidth;
     		}
-    		console.log(galleryFullWidth);
+    		// console.log(galleryFullWidth);
     		var galleryContainer = document.getElementById('img_list');
     		if(galleryFullWidth > galleryContainer.offsetWidth) {
     			galleryContainer.parent.style.overflow = 'hidden';

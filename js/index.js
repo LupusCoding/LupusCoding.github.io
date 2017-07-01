@@ -4,6 +4,7 @@ function getLists() {
         if(documents != null && repositories != null) {
             fillRepoPrev(4);
             fillDocPrev(4);
+            getImageGalleries(4);
         } else {
             getLists();
         }
@@ -14,4 +15,7 @@ function getLists() {
 getResources();
 document.addEventListener('DOMContentLoaded', function() {
     getLists();
+
+    var overlay = document.getElementsByClassName('overlay-bg')[0];
+    overlay.addEventListener('click', function() { closeOverlay(); } );
 });

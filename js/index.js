@@ -19,7 +19,6 @@ function modGalleryList() {
             var galleryList   = document.getElementById('img_list').getElementsByClassName('gallery-prev')[0].getElementsByTagName('a');
             for(var i=0; i<galleryList.length; i++) {
                 galleryList[i].href = '/gallery.html?st='+galleryList[i].getAttribute('gid');
-                console.log(galleryList[i]);
             }
         } else {
             modGalleryList();

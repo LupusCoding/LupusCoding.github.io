@@ -69,6 +69,7 @@ function fillRepoPrev(steps) {
             var a = document.createElement('a');
             a.href = repositories[r].url;
             a.innerHTML = repositories[r].name + '<br/><em><small>' + repositories[r].description + '</small></em>';
+            a.target = "_blank";
             li.append(a);
             repoList.append(li);
         }
@@ -89,6 +90,7 @@ function fillRepoList() {
             var a = document.createElement('a');
             a.href = repositories[r].url;
             a.innerHTML = repositories[r].name + '<br/><em><small>' + repositories[r].description + '</small></em>';
+            a.target = "_blank";
             li.append(a);
             repoList.append(li);
         }
